@@ -1,4 +1,4 @@
-class NotesController < ApplicationController
+class BucketsController < ApplicationController
 
   def index
     buckets = Bucket.all
@@ -9,6 +9,7 @@ class NotesController < ApplicationController
     bucket = Bucket.create!(bucket_params)
     render json: bucket
   end
+  
 
   def update
     bucket = Bucket.find(params[:id])
