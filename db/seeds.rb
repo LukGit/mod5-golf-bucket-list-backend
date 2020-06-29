@@ -113,24 +113,11 @@
 #   {hole_number: 18, par: 4, yardage: 367, tee_lat: 30.195176, tee_lng: -81.391980, green_lat: 30.197669, green_lng: -81.393914, course_id: 6}
 # ])
 # Bucket.create!([{user_id: 1, course_id: 2}, {user_id: 1, course_id: 4}])
-Course.create!(name: "Torrey Pines ", lat: 32.904354, lng: -117.244498)
-Hole.create!([
-  {hole_number: 1, par: 4, yardage: 384, tee_lat: 32.903768, tee_lng: -117.245821, green_lat: 32.902170, green_lng: -117.249438, course_id: 7},
-  {hole_number: 2, par: 4, yardage: 330, tee_lat: 32.902053, tee_lng: -117.250120, green_lat: 32.899394, green_lng: -117.250080, course_id: 7},
-  {hole_number: 3, par: 3, yardage: 145, tee_lat: 32.898478, tee_lng: -117.249882, green_lat: 32.897572, green_lng: -117.250756, course_id: 7},
-  {hole_number: 4, par: 4, yardage: 388, tee_lat: 32.898930, tee_lng: -117.251581, green_lat: 32.902096, green_lng: -117.251995, course_id: 7},
-  {hole_number: 5, par: 4, yardage: 378, tee_lat: 32.901942, tee_lng: -117.251200, green_lat: 32.898795, green_lng: -117.250890, course_id: 7},
-  {hole_number: 6, par: 5, yardage: 441, tee_lat: 32.899636, tee_lng: -117.249603, green_lat: 32.902333, green_lng: -117.246641, course_id: 7},
-  {hole_number: 7, par: 4, yardage: 411, tee_lat: 32.902426, tee_lng: -117.246137, green_lat: 32.899147, green_lng: -117.247450, course_id: 7},
-  {hole_number: 8, par: 3, yardage: 146, tee_lat: 32.898981, tee_lng: -117.246891, green_lat: 32.899394, green_lng: -117.245547, course_id: 7},
-  {hole_number: 9, par: 5, yardage: 477, tee_lat: 32.898751, tee_lng: -117.244245, green_lat: 32.894802, green_lng: -117.243994, course_id: 7},
-  {hole_number: 10, par: 4, yardage: 304, tee_lat: 32.894212, tee_lng: -117.243462, green_lat: 32.891666, green_lng: -117.243534, course_id: 7},
-  {hole_number: 11, par: 3, yardage: 161, tee_lat: 32.890991, tee_lng: -117.243766, green_lat: 32.890521, green_lng: -117.245260, course_id: 7},
-  {hole_number: 12, par: 4, yardage: 411, tee_lat: 32.890283, tee_lng: -117.246146, green_lat: 32.891794, green_lng: -117.249775, course_id: 7},
-  {hole_number: 13, par: 5, yardage: 487, tee_lat: 32.892214, tee_lng: -117.249590, green_lat: 32.891349, green_lng: -117.244929, course_id: 7},
-  {hole_number: 14, par: 4, yardage: 354, tee_lat: 32.891920, tee_lng: -117.244190, green_lat: 32.894476, green_lng: -117.245875, course_id: 7},
-  {hole_number: 15, par: 4, yardage: 287, tee_lat: 32.894276, tee_lng: -117.244482, green_lat: 32.897107, green_lng: -117.245250, course_id: 7},
-  {hole_number: 16, par: 3, yardage: 176, tee_lat: 32.896661, tee_lng: -117.246173, green_lat: 32.895622, green_lng: -117.247472, course_id: 7},
-  {hole_number: 17, par: 4, yardage: 398, tee_lat: 32.896249, tee_lng: -117.247569, green_lat: 32.898865, green_lng: -117.245226, course_id: 7},
-  {hole_number: 18, par: 5, yardage: 477, tee_lat: 32.899302, tee_lng: -117.244909, green_lat: 32.903189, green_lng: -117.245635, course_id: 7}
-])
+# 
+
+# 2 Kapalua "eK7oyoOzbQQ"
+# 3 Pebble "OR9ycuv3Ugk"
+# 4 Pinehurst "tdk67VEucH8&t=3s"
+# 5 St Andrews "DwwvDmS13gk"
+# 6 Sawgrass "GgOb7N7pY80"
+# 7 Torrey Pines "iTcdQ--R5KM"
