@@ -1,5 +1,6 @@
 class BucketsController < ApplicationController
-
+  # skip_before_action :authorized, only: [:destroy, :update, :create]
+ 
   def index
     buckets = Bucket.all
     render json: buckets, include: [:user, :course] 
