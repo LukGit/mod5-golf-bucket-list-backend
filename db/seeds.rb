@@ -121,3 +121,25 @@
 # 5 St Andrews "DwwvDmS13gk"
 # 6 Sawgrass "GgOb7N7pY80"
 # 7 Torrey Pines "iTcdQ--R5KM"
+
+# Course.create!(name: "Kawaguchiko Country Club", lat: 35.468466, lng: 138.751467, video_id: "iWmpDE6ws_c")
+# Hole.create!([
+#   {hole_number: 1, par: 5, yardage: 579, tee_lat: 35.468369, tee_lng: 138.753050, green_lat: 35.472008, green_lng: 138.756797, course_id: 8},
+#   {hole_number: 2, par: 4, yardage: 344, tee_lat: 35.472782, tee_lng: 138.756673, green_lat: 35.475565, green_lng: 138.757306, course_id: 8},
+#   {hole_number: 3, par: 4, yardage: 396, tee_lat: 35.476384, tee_lng: 138.757355, green_lat: 35.474945, green_lng: 138.753762, course_id: 8},
+#   {hole_number: 4, par: 4, yardage: 288, tee_lat: 35.476149, tee_lng: 138.754354, green_lat: 35.477644, green_lng: 138.756689, course_id: 8},
+#   {hole_number: 5, par: 3, yardage: 153, tee_lat: 35.478306, tee_lng: 138.757095, green_lat: 35.477220, green_lng: 138.757815, course_id: 8},
+#   {hole_number: 6, par: 4, yardage: 306, tee_lat: 35.476642, tee_lng: 138.759033, green_lat: 35.474627, green_lng: 138.757904, course_id: 8},
+#   {hole_number: 7, par: 3, yardage: 145, tee_lat: 35.473624, tee_lng: 138.757579, green_lat: 35.472472, green_lng: 138.757315, course_id: 8},
+#   {hole_number: 8, par: 5, yardage: 437, tee_lat: 35.470846, tee_lng: 138.757836, green_lat: 35.467312, green_lng: 138.757515, course_id: 8},
+#   {hole_number: 9, par: 4, yardage: 334, tee_lat: 35.466839, tee_lng: 138.757306, green_lat: 35.467527, green_lng: 138.754058, course_id: 8},
+#   {hole_number: 10, par: 4, yardage: 281, tee_lat: 35.466356, tee_lng: 138.752340, green_lat: 35.464020, green_lng: 138.751933, course_id: 8},
+#   {hole_number: 11, par: 5, yardage: 471, tee_lat: 35.461794, tee_lng: 138.751324, green_lat: 35.457991, green_lng: 138.751579, course_id: 8},
+#   {hole_number: 12, par: 3, yardage: 150, tee_lat: 35.457269, tee_lng: 138.751533, green_lat: 35.455966, green_lng: 138.751511, course_id: 8},
+#   {hole_number: 13, par: 5, yardage: 515, tee_lat: 35.456202, tee_lng: 138.750500, green_lat: 35.460274, green_lng: 138.749035, course_id: 8},
+#   {hole_number: 14, par: 4, yardage: 402, tee_lat: 35.459781, tee_lng: 138.748534, green_lat: 35.456581, green_lng: 138.749364, course_id: 8},
+#   {hole_number: 15, par: 4, yardage: 341, tee_lat: 35.455950, tee_lng: 138.749091, green_lat: 35.457057, green_lng: 138.745901, course_id: 8},
+#   {hole_number: 16, par: 4, yardage: 388, tee_lat: 35.457679, tee_lng: 138.745202, green_lat: 35.460202, green_lng: 138.747622, course_id: 8},
+#   {hole_number: 17, par: 3, yardage: 171, tee_lat: 35.460745, tee_lng: 138.748154, green_lat: 35.462178, green_lng: 138.748311, course_id: 8},
+#   {hole_number: 18, par: 4, yardage: 386, tee_lat: 35.464304, tee_lng: 138.749480, green_lat: 35.467385, green_lng: 138.750406, course_id: 8}
+# ])
