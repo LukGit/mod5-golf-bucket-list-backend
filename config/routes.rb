@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # resources :users
   resources :buckets
   # this route is for broweser refresh 
+  resources :foursomes
   get '/current_user', to: 'users#show'
   # this route is for regular login
   post '/users', to: 'users#create'

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_26_153422) do
+ActiveRecord::Schema.define(version: 2020_07_03_173445) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,25 @@ ActiveRecord::Schema.define(version: 2020_06_26_153422) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "video_id"
+  end
+
+  create_table "foursomes", force: :cascade do |t|
+    t.datetime "play_date"
+    t.integer "handicap"
+    t.bigint "user_id", null: false
+    t.bigint "course_id", null: false
+    t.integer "player1_id"
+    t.string "player1_name"
+    t.integer "player2_id"
+    t.string "player2_name"
+    t.integer "player3_id"
+    t.string "player3_name"
+    t.integer "player4_id"
+    t.string "player4_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["course_id"], name: "index_foursomes_on_course_id"
+    t.index ["user_id"], name: "index_foursomes_on_user_id"
   end
 
   create_table "holes", force: :cascade do |t|
@@ -58,5 +77,7 @@ ActiveRecord::Schema.define(version: 2020_06_26_153422) do
 
   add_foreign_key "buckets", "courses"
   add_foreign_key "buckets", "users"
+  add_foreign_key "foursomes", "courses"
+  add_foreign_key "foursomes", "users"
   add_foreign_key "holes", "courses"
 end
