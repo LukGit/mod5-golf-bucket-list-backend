@@ -19,6 +19,13 @@ class FoursomesController < ApplicationController
 
   end
 
+  def destroy
+    # this method is called when a bucket item is deleted
+    foursome = Foursome.find(params[:id])
+    foursome.destroy
+    render json: foursome
+  end
+
   private
 
   def foursome_params
