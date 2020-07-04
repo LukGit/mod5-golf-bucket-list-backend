@@ -11,6 +11,14 @@ class FoursomesController < ApplicationController
     render json: foursome, include: [:user, :course]
   end
 
+  def update
+    #  this method is called when a bucket item is updated
+    foursome = Foursome.find(params[:id])
+    foursome.update(foursome_params)
+    render json: foursome, include: [:user, :course]
+
+  end
+
   private
 
   def foursome_params
