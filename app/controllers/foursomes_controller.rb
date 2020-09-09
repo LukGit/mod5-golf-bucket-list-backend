@@ -19,6 +19,14 @@ class FoursomesController < ApplicationController
 
   end
 
+  def show
+    foursome = Foursome.find(params[:id])
+    player2 = User.find(foursome.player2_id) 
+    player3 = User.find(foursome.player3_id)
+    player4 = User.find(foursome.player4_id)
+    render json: { email2: player2.email, email3: player3.email, email4: player4.email}
+  end
+
   def destroy
     # this method is called when a bucket item is deleted
     foursome = Foursome.find(params[:id])
