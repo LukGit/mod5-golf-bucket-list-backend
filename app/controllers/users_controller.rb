@@ -9,7 +9,7 @@ class UsersController < ApplicationController
       if user.authenticate(params[:password])
         #  create token and send back
         token = encode_token({ user_id: user.id })
-        render json: { id: user.id, username: user.username, buckets: user.buckets, courses: user.courses, jwt: token }
+        render json: { id: user.id, username: user.username, email: user.email, buckets: user.buckets, courses: user.courses, jwt: token }
       else
         #  if authenticate fails, send invalid passowrd back
         render json: { error: 'Invalid password'}, status: :unauthorized
