@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 
     user = User.find(id)
     if user
-      render json: { id: user.id, username: user.username, buckets: user.buckets, courses: user.courses, jwt: token }
+      render json: { id: user.id, username: user.username, email: user.email, buckets: user.buckets, courses: user.courses, jwt: token }
     else
       render json: { error: 'Invalid token'}
     end
@@ -37,15 +37,15 @@ class UsersController < ApplicationController
 
   def signup
     #  this method is called when user signup
-    user_new = User.create!(username: params[:username], password: params[:password])
+    user_new = User.create!(username: params[:username], password: params[:password], email: params[:email])
     if user_new 
       # after user is created, create token and send back JSON data as successful login
       token = encode_token({ user_id: user_new.id })
-      render json: { id: user_new.id, username: user_new.username, buckets: user_new.buckets, courses: user_new.courses, jwt: token }
+      render json: { id: user_new.id, username: user_new.username, email: user_new.email, buckets: user_new.buckets, courses: user_new.courses, jwt: token }
     end
   end
 
   def user_params
-    params.require(:user).permit(:username, :password)
+    params.require(:user).permit(:username, :password, :email)
   end
 end
