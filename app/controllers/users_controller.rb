@@ -41,7 +41,7 @@ class UsersController < ApplicationController
     if user_new 
       # after user is created, create token and send back JSON data as successful login
       token = encode_token({ user_id: user_new.id })
-      render json: { id: user_new.id, username: user_new.username, email: user_new.email, handicap: user_new.my_handicap buckets: user_new.buckets, courses: user_new.courses, jwt: token }
+      render json: { id: user_new.id, username: user_new.username, email: user_new.email, handicap: user_new.my_handicap, buckets: user_new.buckets, courses: user_new.courses, jwt: token }
     end
   end
 
