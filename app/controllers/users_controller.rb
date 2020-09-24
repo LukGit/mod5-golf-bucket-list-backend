@@ -45,6 +45,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def update
+    #  this method is called when a bucket item is updated
+    user = User.find(params[:id])
+    user.update(user_params)
+    render json: user
+  end
+
   def user_params
     params.require(:user).permit(:username, :password, :email, :my_handicap)
   end
