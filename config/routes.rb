@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/current_user', to: 'users#show'
   # this route is for regular login
   post '/users', to: 'users#create'
+  # this route is for user update
+  patch '/users/:id', to: 'users#update'
   # this route is for signup
   post '/signup', to: 'users#signup'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
