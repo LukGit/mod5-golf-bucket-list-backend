@@ -49,8 +49,8 @@ class UsersController < ApplicationController
     #  this method is called when a user is updated
     user = User.find(params[:id])
     user.update(user_params)
-    # render json: user
-    render { id: user.id, username: user.username, email: user.email, handicap: user.my_handicap, clubs: user.clubs}
+    render json: user
+    # render jason: { id: user.id, username: user.username, email: user.email, handicap: user.my_handicap, clubs: user.clubs}
   end
 
   def user_params

@@ -3,7 +3,7 @@ class ClubsController < ApplicationController
   def create
     # this method is called when a new bucket item is added
     club = Club.create!(club_params)
-    render json: club, include: [:user]
+    render json: club
   end
 
   private
