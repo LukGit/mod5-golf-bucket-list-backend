@@ -50,6 +50,7 @@ class UsersController < ApplicationController
     user = User.find(params[:id])
     user.update(user_params)
     render json: user
+    # this doesn't work
     # render jason: { id: user.id, username: user.username, email: user.email, handicap: user.my_handicap, clubs: user.clubs}
   end
 
